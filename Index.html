@@ -1,0 +1,461 @@
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<HTML>
+  <head>
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Welcome To My Portfolio</title>
+      </head>
+      <body>
+          
+      </body>
+      </html>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+  </head>
+<body>
+  <style>
+      body {
+          margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    #navbar {
+      position: fixed;
+      background: black;
+      width: 100%;
+      top: 0;
+      color: #333;
+      
+    }
+    
+    #navbar a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      }
+    
+    #navbar a:hover {
+      background-color: #333;
+      background: black;
+    }
+    #navbar a.active {
+     background-color: blue;
+      color: white;
+    }
+    /*Settings for the header*/
+    #welcome-section {
+      height: 100vh;
+      width: 100%;
+      background: #2FF5D6;
+      
+    }
+    /*Set up for the header*/
+    h1 {
+      position: absolute;
+      text-align: center;
+      top: 50vh;
+      left: 40%;
+    }
+    #about-me {
+      text-align: center;
+      background-color: #2F3136;
+      padding: 10px;
+      color: white;
+    }
+    h2 {
+      text-align: center;
+    }
+    .projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #2FF5D6;
+      transition: all 0.5s ease-out; }
+
+      .btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #2FF5D6;
+    color: #fff; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #a9aba9;
+  color: #333; }
+
+  
+  footer.footer-text {
+        text-align: center;
+        background-color: #333;
+        color: #ddd;
+        margin: 0;
+        padding: 40px;
+        width: 100%;
+        height: 20%;
+      }
+    /* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+  </style>
+<nav id=navbar>
+  <a href="#welcome-section">Home</a>
+ <a href="#about-me">About Me</a>
+  <a href="#projects">Porfolio</a>
+  <a href="#footer">Contact</a>
+  </nav>
+  
+
+    
+<header id="welcome-section"><h1>Welcome im Steven!</h1></header>
+    <section id="about-me"><h2>About Me</h2>  <p>
+            I am a self taught developer pursuing a promising career in Web
+            Development. I have had an interest in web Development for quite
+            some. With the skills and projects that I have completed, will show
+            you that I would be a great asset to your company.
+          </p></section>
+<section id="projects"><div class="project-tile"><h2 class="lg-heading">My <span class="text-secondary">Work</span></h2>
+      <h2 class="sm-heading">Check out some of my projects...</h2>
+      <div class="projects">
+        <div class="item">
+          <a href="https://hungry-boyd-f1cf0a.netlify.com/">
+            <img src="img/projects/project1.jpg" alt="Project" />
+          </a>
+          <a href="https://hungry-boyd-f1cf0a.netlify.com/" class="btn-light">
+            <i class="fas fa-eye"></i> Project</a>
+          <a
+            href="https://github.com/mackartist/sample/blob/master/index.html"
+            class="btn-dark"
+          id="profile-link" target="_blank">
+            <i class="fab fa-github"></i> Github </a>
+          <div class="about-text">
+            <h3>Creative Concepts By T</h3>
+            <p>
+              This is my first professional project. I coded this project with
+              HTML CSS and Javascript
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <a href="https://happy-jones-5799de.netlify.com/">
+            <img src="img/projects/project2.jpg" alt="Project" />
+          </a>
+          <a href="https://happy-jones-5799de.netlify.com/" class="btn-light">
+            <i class="fas fa-eye"></i> Project
+          </a>
+          <a href="https://github.com/mackartist/smack" class="btn-dark" id="profile-link" target="_blank">
+            <i class="fab fa-github"></i> Github
+          </a>
+          <div class="about-text">
+            <h3>Smack</h3>
+            <p>
+              This a project that I did for a friend. She just wanted simple
+              website that her clients could go to. So I build this a simple
+              modal with HTML, CSS, Jquery.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <a href="https://naughty-golick-579787.netlify.com/">
+            <img src="img/projects/project3.jpg" alt="Project" />
+          </a>
+          <a
+            href="https://naughty-golick-579787.netlify.com/"
+            class="btn-light"
+          >
+            <i class="fas fa-eye"></i> Project
+          </a>
+          <a href="https://github.com/mackartist/ccdd" class="btn-dark" id="profile-link" target="_blank">
+            <i class="fab fa-github"></i> Github
+          </a>
+          <div class="about-text">
+            <h3>CCDD</h3>
+            <p>
+              This is split screen store front that like to teespring website.
+              This was done with HTML CSS and Javascript.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <a href="https://sharp-cori-72bf4e.netlify.com/">
+            <img src="img/projects/project4.jpg" alt="Project" />
+          </a>
+          <a href="https://sharp-cori-72bf4e.netlify.com/" class="btn-light">
+            <i class="fas fa-eye"></i> Project
+          </a>
+          <a href="https://github.com/mackartist/parallax" class="btn-dark" id="profile-link" target="_blank">
+            <i class="fab fa-github"></i> Github
+          </a>
+          <div class="about-text">
+            <h3>Parallax Design</h3>
+            <p>
+              This is a simple parallax design implimenting HTML & CSS.
+            </p>
+          </div>
+        </div></div></section>
+        <footer class="footer-text" id="footer">
+          <i class="fab fa-facebook"></i>
+          <a href="https://www.instagram.com/creativeconceptsbyt/">
+            <i class="fab fa-instagram"></i
+          ></a>
+          <i class="fab fa-twitter"></i>
+    
+          Copyright mackartist productions 2019<i
+            class="fa fa-copyright"
+          ></i>
+        </footer>
+  </body>
+    </HTML>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <HTML>
+      <head>
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <meta http-equiv="X-UA-Compatible" content="ie=edge">
+              <title>Welcome To My Portfolio</title>
+          </head>
+          <body>
+              
+          </body>
+          </html>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    
+      </head>
+    <body>
+      <style>
+          body {
+              margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        #navbar {
+          position: fixed;
+          background: black;
+          width: 100%;
+          top: 0;
+          color: #333;
+          
+        }
+        
+        #navbar a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+          }
+        
+        #navbar a:hover {
+          background-color: #333;
+          background: black;
+        }
+        #navbar a.active {
+         background-color: blue;
+          color: white;
+        }
+        /*Settings for the header*/
+        #welcome-section {
+          height: 100vh;
+          width: 100%;
+          background: #2FF5D6;
+          
+        }
+        /*Set up for the header*/
+        h1 {
+          position: absolute;
+          text-align: center;
+          top: 50vh;
+          left: 40%;
+        }
+        #about-me {
+          text-align: center;
+          background-color: #2F3136;
+          padding: 10px;
+          color: white;
+        }
+        h2 {
+          text-align: center;
+        }
+        .projects {
+      display: grid;
+      grid-gap: 0.7rem;
+      grid-template-columns: repeat(3, 1fr); }
+      .projects img {
+        width: 100%;
+        border: 3px #fff solid; }
+        .projects img:hover {
+          opacity: 0.5;
+          border-color: #2FF5D6;
+          transition: all 0.5s ease-out; }
+    
+          .btn, .btn-dark, .btn-light {
+      display: block;
+      padding: 0.5rem 1rem;
+      border: 0;
+      margin-bottom: 0.3rem; }
+      .btn:hover, .btn-dark:hover, .btn-light:hover {
+        background: #2FF5D6;
+        color: #fff; }
+    
+    .btn-dark {
+      background: black;
+      color: #fff; }
+    
+    .btn-light {
+      background: #a9aba9;
+      color: #333; }
+    
+      
+      footer.footer-text {
+            text-align: center;
+            background-color: #333;
+            color: #ddd;
+            margin: 0;
+            padding: 40px;
+            width: 100%;
+            height: 20%;
+          }
+        /* If the screen size is 600px wide or less, hide the element */
+    @media only screen and (max-width: 600px) {
+      div.example {
+        display: none;
+      }
+    }
+      </style>
+    <nav id=navbar>
+      <a href="#welcome-section">Home</a>
+     <a href="#about-me">About Me</a>
+      <a href="#projects">Porfolio</a>
+      <a href="#footer">Contact</a>
+      </nav>
+      
+    
+        
+    <header id="welcome-section"><h1>Welcome im Steven!</h1></header>
+        <section id="about-me"><h2>About Me</h2>  <p>
+                I am a self taught developer pursuing a promising career in Web
+                Development. I have had an interest in web Development for quite
+                some. With the skills and projects that I have completed, will show
+                you that I would be a great asset to your company.
+              </p></section>
+    <section id="projects"><div class="project-tile"><h2 class="lg-heading">My <span class="text-secondary">Work</span></h2>
+          <h2 class="sm-heading">Check out some of my projects...</h2>
+          <div class="projects">
+            <div class="item">
+              <a href="https://hungry-boyd-f1cf0a.netlify.com/">
+                <img src="img/projects/project1.jpg" alt="Project" />
+              </a>
+              <a href="https://hungry-boyd-f1cf0a.netlify.com/" class="btn-light">
+                <i class="fas fa-eye"></i> Project</a>
+              <a
+                href="https://github.com/mackartist/sample/blob/master/index.html"
+                class="btn-dark"
+              id="profile-link" target="_blank">
+                <i class="fab fa-github"></i> Github </a>
+              <div class="about-text">
+                <h3>Creative Concepts By T</h3>
+                <p>
+                  This is my first professional project. I coded this project with
+                  HTML CSS and Javascript
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="https://happy-jones-5799de.netlify.com/">
+                <img src="img/projects/project2.jpg" alt="Project" />
+              </a>
+              <a href="https://happy-jones-5799de.netlify.com/" class="btn-light">
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a href="https://github.com/mackartist/smack" class="btn-dark" id="profile-link" target="_blank">
+                <i class="fab fa-github"></i> Github
+              </a>
+              <div class="about-text">
+                <h3>Smack</h3>
+                <p>
+                  This a project that I did for a friend. She just wanted simple
+                  website that her clients could go to. So I build this a simple
+                  modal with HTML, CSS, Jquery.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="https://naughty-golick-579787.netlify.com/">
+                <img src="img/projects/project3.jpg" alt="Project" />
+              </a>
+              <a
+                href="https://naughty-golick-579787.netlify.com/"
+                class="btn-light"
+              >
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a href="https://github.com/mackartist/ccdd" class="btn-dark" id="profile-link" target="_blank">
+                <i class="fab fa-github"></i> Github
+              </a>
+              <div class="about-text">
+                <h3>CCDD</h3>
+                <p>
+                  This is split screen store front that like to teespring website.
+                  This was done with HTML CSS and Javascript.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="https://sharp-cori-72bf4e.netlify.com/">
+                <img src="img/projects/project4.jpg" alt="Project" />
+              </a>
+              <a href="https://sharp-cori-72bf4e.netlify.com/" class="btn-light">
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a href="https://github.com/mackartist/parallax" class="btn-dark" id="profile-link" target="_blank">
+                <i class="fab fa-github"></i> Github
+              </a>
+              <div class="about-text">
+                <h3>Parallax Design</h3>
+                <p>
+                  This is a simple parallax design implimenting HTML & CSS.
+                </p>
+              </div>
+            </div></div></section>
+            <footer class="footer-text" id="footer">
+              <i class="fab fa-facebook"></i>
+              <a href="https://www.instagram.com/creativeconceptsbyt/">
+                <i class="fab fa-instagram"></i
+              ></a>
+              <i class="fab fa-twitter"></i>
+        
+              Copyright mackartist productions 2019<i
+                class="fa fa-copyright"
+              ></i>
+            </footer>
+      </body>
+        </HTML>
+    
